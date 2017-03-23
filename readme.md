@@ -62,5 +62,8 @@ Examples:
 
 ## Changelog
 
+### 1.0.1
+* Switched preview to button to allow animate again
+
 ### 1.0.0
 * Initial commit

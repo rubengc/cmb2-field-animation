@@ -1,7 +1,9 @@
 .cmb-animation-preview {
-    display: inline-block;
-    font-size: 24px;
-    line-height: 24px;
-    vertical-align: middle;
-    margin-left: 10px;
+    margin-left: 10px !important;
+    margin-top: 2px !important;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }

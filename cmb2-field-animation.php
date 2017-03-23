@@ -23,7 +23,7 @@ if( !class_exists( 'CMB2_Field_Animation' ) ) {
         /**
          * Current version number
          */
-        const VERSION = '1.0.0';
+        const VERSION = '1.0.1';
 
         /**
          * Initialize the plugin by hooking into CMB2
@@ -242,7 +242,7 @@ if( !class_exists( 'CMB2_Field_Animation' ) ) {
             ) );
 
             if( $field->args( 'preview' ) ) {
-                echo '<span class="cmb-animation-preview">Preview</span>';
+                echo '<span class="cmb-animation-preview button">' . __( 'Animate it', 'cmb2' ) . '</span>';
             }
 
             $field_type->_desc( true, true );
