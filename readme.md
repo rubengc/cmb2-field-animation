@@ -2,6 +2,8 @@
 
 Custom field for [CMB2](https://github.com/WebDevStudios/CMB2) to store [Animate.css](https://github.com/daneden/animate.css) animations.
 
+![example](example.gif)
+
 ```php
 add_action( 'cmb2_admin_init', 'cmb2_animation_metabox' );
 function cmb2_animation_metabox() {
@@ -55,10 +57,6 @@ Examples:
 'groups'        => array( 'entrances' )                 // Enable all entrances
 'groups'        => array( 'fading_exits', 'specials' )  // Enable fading exits and specials
 ```
-
-## Screenshot
-
-![example](example.gif)
 
 ## Changelog
 
