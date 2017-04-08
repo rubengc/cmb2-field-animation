@@ -1,8 +1,8 @@
 <?php
 /*
 Plugin Name: CMB2 Field Type: Animation
-Plugin URI: https://github.com/rubengc/cmb2-field-order
-GitHub Plugin URI: https://github.com/rubengc/cmb2-field-order
+Plugin URI: https://github.com/rubengc/cmb2-field-animation
+GitHub Plugin URI: https://github.com/rubengc/cmb2-field-animation
 Description: CMB2 field type to allow pick an order of predefined options.
 Version: 1.0.0
 Author: Ruben Garcia
@@ -29,6 +29,8 @@ if( !class_exists( 'CMB2_Field_Animation' ) ) {
          * Initialize the plugin by hooking into CMB2
          */
         public function __construct() {
+            add_action( 'admin_enqueue_scripts', array( $this, 'setup_admin_scripts' ) );
+
             add_action( 'cmb2_render_animation', array( $this, 'render' ), 10, 5 );
             add_action( 'cmb2_sanitize_animation', array( $this, 'sanitize' ), 10, 4 );
         }
@@ -37,8 +39,6 @@ if( !class_exists( 'CMB2_Field_Animation' ) ) {
          * Render field
          */
         public function render( $field, $value, $object_id, $object_type, $field_type ) {
-            $this->setup_admin_scripts();
-
             $selected_groups = array(
                 'seekers',
 
