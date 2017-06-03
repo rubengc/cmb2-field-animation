@@ -1,14 +1,18 @@
 <?php
-/*
-Plugin Name: CMB2 Field Type: Animation
-Plugin URI: https://github.com/rubengc/cmb2-field-animation
-GitHub Plugin URI: https://github.com/rubengc/cmb2-field-animation
-Description: CMB2 field type to allow pick an order of predefined options.
-Version: 1.0.0
-Author: Ruben Garcia
-Author URI: http://rubengc.com/
-License: GPLv2+
-*/
+/**
+ * @package      CMB2\Field_Animation
+ * @author       Tsunoa
+ * @copyright    Copyright (c) Tsunoa
+ *
+ * Plugin Name: CMB2 Field Type: Animation
+ * Plugin URI: https://github.com/rubengc/cmb2-field-animation
+ * GitHub Plugin URI: https://github.com/rubengc/cmb2-field-animation
+ * Description: CMB2 field type to allow pick an order of predefined options.
+ * Version: 1.0.0
+ * Author: Tsunoa
+ * Author URI: https://tsunoa.com
+ * License: GPLv2+
+ */
 
 
 // Exit if accessed directly
@@ -69,148 +73,148 @@ if( !class_exists( 'CMB2_Field_Animation' ) ) {
 
             if( in_array( 'seekers', $selected_groups ) ) {
                 $options['Attention Seekers'] = array(
-                    'bounce' => 'bounce',
-                    'flash' => 'flash',
-                    'pulse' => 'pulse',
-                    'rubberBand' => 'rubberBand',
-                    'shake' => 'shake',
-                    'swing' => 'swing',
-                    'tada' => 'tada',
-                    'wobble' => 'wobble',
-                    'jello' => 'jello',
+                    'bounce' => 'Bounce',
+                    'flash' => 'Flash',
+                    'pulse' => 'Pulse',
+                    'rubberBand' => 'Rubber Band',
+                    'shake' => 'Shake',
+                    'swing' => 'Swing',
+                    'tada' => 'Tada',
+                    'wobble' => 'Wobble',
+                    'jello' => 'Jello',
                 );
             }
 
             if( in_array( 'entrances', $selected_groups ) || in_array( 'bouncing_entrances', $selected_groups ) ) {
                 $options['Bouncing Entrances'] = array(
-                    'bounceIn' => 'bounceIn',
-                    'bounceInDown' => 'bounceInDown',
-                    'bounceInLeft' => 'bounceInLeft',
-                    'bounceInRight' => 'bounceInRight',
-                    'bounceInUp' => 'bounceInUp',
+                    'bounceIn' => 'Bounce In',
+                    'bounceInDown' => 'Bounce In Down',
+                    'bounceInLeft' => 'Bounce In Left',
+                    'bounceInRight' => 'Bounce In Right',
+                    'bounceInUp' => 'Bounce In Up',
                 );
             }
 
             if( in_array( 'exits', $selected_groups ) || in_array( 'bouncing_exits', $selected_groups ) ) {
                 $options['Bouncing Exits'] = array(
-                    'bounceOut' => 'bounceOut',
-                    'bounceOutDown' => 'bounceOutDown',
-                    'bounceOutLeft' => 'bounceOutLeft',
-                    'bounceOutRight' => 'bounceOutRight',
-                    'bounceOutUp' => 'bounceOutUp',
+                    'bounceOut' => 'Bounce Out',
+                    'bounceOutDown' => 'Bounce Out Down',
+                    'bounceOutLeft' => 'Bounce Out Left',
+                    'bounceOutRight' => 'Bounce Out Right',
+                    'bounceOutUp' => 'Bounce Out Up',
                 );
             }
 
             if( in_array( 'entrances', $selected_groups ) || in_array( 'fading_entrances', $selected_groups ) ) {
                 $options['Fading Entrances'] = array(
-                    'fadeIn' => 'fadeIn',
-                    'fadeInDown' => 'fadeInDown',
-                    'fadeInDownBig' => 'fadeInDownBig',
-                    'fadeInLeft' => 'fadeInLeft',
-                    'fadeInLeftBig' => 'fadeInLeftBig',
-                    'fadeInRight' => 'fadeInRight',
-                    'fadeInRightBig' => 'fadeInRightBig',
-                    'fadeInUp' => 'fadeInUp',
-                    'fadeInUpBig' => 'fadeInUpBig',
+                    'fadeIn' => 'Fade In',
+                    'fadeInDown' => 'Fade In Down',
+                    'fadeInDownBig' => 'Fade In Down Big',
+                    'fadeInLeft' => 'Fade In Left',
+                    'fadeInLeftBig' => 'Fade In Left Big',
+                    'fadeInRight' => 'Fade In Right',
+                    'fadeInRightBig' => 'Fade In Right Big',
+                    'fadeInUp' => 'Fade In Up',
+                    'fadeInUpBig' => 'Fade In Up Big',
                 );
             }
 
             if( in_array( 'exits', $selected_groups ) || in_array( 'fading_exits', $selected_groups ) ) {
                 $options['Fading Exits'] = array(
-                    'fadeOut' => 'fadeOut',
-                    'fadeOutDown' => 'fadeOutDown',
-                    'fadeOutDownBig' => 'fadeOutDownBig',
-                    'fadeOutLeft' => 'fadeOutLeft',
-                    'fadeOutLeftBig' => 'fadeOutLeftBig',
-                    'fadeOutRight' => 'fadeOutRight',
-                    'fadeOutRightBig' => 'fadeOutRightBig',
-                    'fadeOutUp' => 'fadeOutUp',
-                    'fadeOutUpBig' => 'fadeOutUpBig',
+                    'fadeOut' => 'Fade Out',
+                    'fadeOutDown' => 'Fade Out Down',
+                    'fadeOutDownBig' => 'Fade Out Down Big',
+                    'fadeOutLeft' => 'Fade Out Left',
+                    'fadeOutLeftBig' => 'Fade Out Left Big',
+                    'fadeOutRight' => 'Fade Out Right',
+                    'fadeOutRightBig' => 'Fade Out Right Big',
+                    'fadeOutUp' => 'Fade Out Up',
+                    'fadeOutUpBig' => 'Fade Out Up Big',
                 );
             }
 
             if( in_array( 'flippers', $selected_groups ) ) {
                 $options['Flippers'] = array(
-                    'flip' => 'flip',
-                    'flipInX' => 'flipInX',
-                    'flipInY' => 'flipInY',
-                    'flipOutX' => 'flipOutX',
-                    'flipOutY' => 'flipOutY',
+                    'flip' => 'Flip',
+                    'flipInX' => 'Flip In X',
+                    'flipInY' => 'Flip In Y',
+                    'flipOutX' => 'Flip Out X',
+                    'flipOutY' => 'Flip Out Y',
                 );
             }
 
             if( in_array( 'lightspeed', $selected_groups ) ) {
-                $options['Lightspeed'] = array(
-                    'lightSpeedIn' => 'lightSpeedIn',
-                    'lightSpeedOut' => 'lightSpeedOut',
+                $options['Light Speed'] = array(
+                    'lightSpeedIn' => 'Light Speed In',
+                    'lightSpeedOut' => 'Light Speed Out',
                 );
             }
 
             if( in_array( 'entrances', $selected_groups ) || in_array( 'rotating_entrances', $selected_groups ) ) {
                 $options['Rotating Entrances'] = array(
-                    'rotateIn' => 'rotateIn',
-                    'rotateInDownLeft' => 'rotateInDownLeft',
-                    'rotateInDownRight' => 'rotateInDownRight',
-                    'rotateInUpLeft' => 'rotateInUpLeft',
-                    'rotateInUpRight' => 'rotateInUpRight',
+                    'rotateIn' => 'Rotate In',
+                    'rotateInDownLeft' => 'Rotate In Down Left',
+                    'rotateInDownRight' => 'Rotate In Down Right',
+                    'rotateInUpLeft' => 'Rotate In Up Left',
+                    'rotateInUpRight' => 'Rotate In Up Right',
                 );
             }
 
             if( in_array( 'exits', $selected_groups ) || in_array( 'rotating_exits', $selected_groups ) ) {
                 $options['Rotating Exits'] = array(
-                    'rotateOut' => 'rotateOut',
-                    'rotateOutDownLeft' => 'rotateOutDownLeft',
-                    'rotateOutDownRight' => 'rotateOutDownRight',
-                    'rotateOutUpLeft' => 'rotateOutUpLeft',
-                    'rotateOutUpRight' => 'rotateOutUpRight',
+                    'rotateOut' => 'Rotate Out',
+                    'rotateOutDownLeft' => 'Rotate Out Down Left',
+                    'rotateOutDownRight' => 'Rotate Out Down Right',
+                    'rotateOutUpLeft' => 'Rotate Out Up Left',
+                    'rotateOutUpRight' => 'Rotate Out Up Right',
                 );
             }
 
             if( in_array( 'entrances', $selected_groups ) || in_array( 'sliding_entrances', $selected_groups ) ) {
                 $options['Sliding Entrances'] = array(
-                    'slideInUp' => 'slideInUp',
-                    'slideInDown' => 'slideInDown',
-                    'slideInLeft' => 'slideInLeft',
-                    'slideInRight' => 'slideInRight',
+                    'slideInUp' => 'Slide In Up',
+                    'slideInDown' => 'Slide In Down',
+                    'slideInLeft' => 'Slide In Left',
+                    'slideInRight' => 'Slide In Right',
 
                 );
             }
 
             if( in_array( 'exits', $selected_groups ) || in_array( 'sliding_exits', $selected_groups ) ) {
                 $options['Sliding Exits'] = array(
-                    'slideOutUp' => 'slideOutUp',
-                    'slideOutDown' => 'slideOutDown',
-                    'slideOutLeft' => 'slideOutLeft',
-                    'slideOutRight' => 'slideOutRight',
+                    'slideOutUp' => 'Slide Out Up',
+                    'slideOutDown' => 'Slide Out Down',
+                    'slideOutLeft' => 'Slide Out Left',
+                    'slideOutRight' => 'Slide Out Right',
 
                 );
             }
 
             if( in_array( 'entrances', $selected_groups ) || in_array( 'zoom_entrances', $selected_groups ) ) {
                 $options['Zoom Entrances'] = array(
-                    'zoomIn' => 'zoomIn',
-                    'zoomInDown' => 'zoomInDown',
-                    'zoomInLeft' => 'zoomInLeft',
-                    'zoomInRight' => 'zoomInRight',
-                    'zoomInUp' => 'zoomInUp',
+                    'zoomIn' => 'Zoom In',
+                    'zoomInDown' => 'Zoom In Down',
+                    'zoomInLeft' => 'Zoom In Left',
+                    'zoomInRight' => 'Zoom In Right',
+                    'zoomInUp' => 'Zoom In Up',
                 );
             }
 
             if( in_array( 'exits', $selected_groups ) || in_array( 'zoom_exits', $selected_groups ) ) {
                 $options['Zoom Exits'] = array(
-                    'zoomOut' => 'zoomOut',
-                    'zoomOutDown' => 'zoomOutDown',
-                    'zoomOutLeft' => 'zoomOutLeft',
-                    'zoomOutRight' => 'zoomOutRight',
-                    'zoomOutUp' => 'zoomOutUp',
+                    'zoomOut' => 'Zoom Out',
+                    'zoomOutDown' => 'Zoom Out Down',
+                    'zoomOutLeft' => 'Zoom Out Left',
+                    'zoomOutRight' => 'Zoom Out Right',
+                    'zoomOutUp' => 'Zoom Out Up',
                 );
             }
 
             if( in_array( 'specials', $selected_groups ) ) {
                 $options['Specials'] = array(
-                    'hinge' => 'hinge',
-                    'rollIn' => 'rollIn',
-                    'rollOut' => 'rollOut',
+                    'hinge' => 'Hinge',
+                    'rollIn' => 'Roll In',
+                    'rollOut' => 'Roll Out',
                 );
             }
 
@@ -267,7 +271,7 @@ if( !class_exists( 'CMB2_Field_Animation' ) ) {
          * Enqueue scripts and styles
          */
         public function setup_admin_scripts() {
-            wp_register_script( 'cmb-animation', plugins_url( 'js/animation.js', __FILE__ ), array( 'jquery' ), self::VERSION );
+            wp_register_script( 'cmb-animation', plugins_url( 'js/animation.js', __FILE__ ), array( 'jquery' ), self::VERSION, true );
             wp_enqueue_script( 'cmb-animation' );
 
             wp_enqueue_style( 'animate-css', plugins_url( 'css/animate.css', __FILE__ ), array(), self::VERSION );
