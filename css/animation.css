@@ -1,9 +1,18 @@
-.cmb-animation-preview {
-    margin-left: 10px !important;
+.cmb-animation-preview-button, .cmb-animation-preview-text {
+    margin-left: 6px !important;
     margin-top: 2px !important;
 
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+}
+
+.cmb-animation-preview-button {
+    padding: 2px 6px 2px 8px !important;
+}
+
+.cmb-animation-preview-text {
+    display: inline-block;
+    padding: 4px 0;
 }
